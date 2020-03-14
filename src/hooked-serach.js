@@ -46,9 +46,15 @@ export default function HookedSearch() {
 
             {loading
                 ? 'Loading'
-                : results.map(item => {
-                      return <video autoPlay loop key={item} src={item} />;
-                  })}
+                : 
+                <div className='container'>
+                    {
+                        results.map(item => {
+                            return <video autoPlay loop key={item} src={item} />;
+                        })
+                    }
+                </div>
+            }
         </div>
     );
 }
