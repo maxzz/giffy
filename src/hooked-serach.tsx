@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 const MY_GIPHY_KEY = 'nasGAvbAc9jhi08DuzUhIV1sW3M9pYDT';
 
-function useGiphy(query) {
-    const [results, setResults] = useState([]);
+function useGiphy(query: string): [any[], boolean] {
+    const [results, setResults] = useState<any[]>([]);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -14,7 +14,7 @@ function useGiphy(query) {
                 const response = await fetch(QUERY);
                 const { data } = await response.json();
 
-                setResults(data.map(item => item.images.preview.mp4));
+                setResults(data.map((item: any) => item.images.preview.mp4));
             } finally {
                 setLoading(false);
             }
@@ -28,7 +28,7 @@ function useGiphy(query) {
 }
 
 export default function HookedSearch() {
-    const [search, setSearch] = useState('book');
+    const [search, setSearch] = useState('fifth element');
     const [query, setQuery] = useState('');
     const [results, loading] = useGiphy(query);
 

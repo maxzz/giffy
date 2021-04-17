@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import 'regenerator-runtime/runtime.js';
-
 import HookedSearch from './hooked-serach';
 
 function App() {
     return (
-        <div>
-        <HookedSearch />
-        </div>
+        <StrictMode>
+            <div>
+                <HookedSearch />
+            </div>
+        </StrictMode>
     );
 }
 
