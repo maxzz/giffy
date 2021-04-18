@@ -2,7 +2,9 @@
 
 CSS Masonry Grid experiments.
 
-### Sources
+![](src/assets/previews/2021-04-17_21-05-46.png)
+
+### References
 
 * [Native CSS Masonry Layout In CSS Grid](https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/)
 
