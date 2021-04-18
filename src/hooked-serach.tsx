@@ -33,7 +33,7 @@ export default function HookedSearch() {
     const [results, loading] = useGiphy(query);
 
     return (
-        <div className="h-screen debug">
+        <div className="h-screen">
 
             <div className="h-16 px-4 flex items-center justify-end text-gray-100 bg-gradient-to-r from-gray-400 to-gray-800 shadow-md">
                 <h1 className="text-2xl uppercase">Giffy Search</h1>
@@ -49,7 +49,7 @@ export default function HookedSearch() {
                     <button className="self-center mt-4 px-4 py-1 border rounded-md text-gray-300">Search</button>
                 </form>
 
-                <div className="mt-4 max-h-96 overflow-y-auto">
+                <div className="mt-4 max-h-[500px] overflow-y-auto -ml-4 pl-4" style={{width: 'calc(100% + 32px)'}}>
                     {loading
                         ? 'Loading'
                         : <div className="" style={{columnCount: 4, columnGap: '.5rem'}}>

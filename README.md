@@ -1,14 +1,13 @@
-# Sources
+### About
 
-Youtube video: [Async React Hooks](https://youtu.be/HQq5Sod8AEk)
+CSS Masonry Grid experiments.
 
-* [react-demos/src/demo/async-hooks.js](https://github.com/hswolff/youtube/blob/master/videos/react-demos/src/index.js)
+### Sources
 
-* [react-demos/src/index.css](https://github.com/hswolff/youtube/blob/master/videos/react-demos/src/demo/async-hooks.js)
+* [Native CSS Masonry Layout In CSS Grid](https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/)
 
-* [react-demos/src/index.js](https://github.com/hswolff/youtube/blob/master/videos/react-demos/src/index.css)
+* [CSS Grid: Responisve Website Exercise - 24 of 25](https://youtu.be/6dzzVGXVflI)
 
-* [API Explorer](https://developers.giphy.com/explorer)
+* [API Explorer: giphy.com](https://developers.giphy.com/explorer)
 
-* [CSS GRID: Responisve Website Exercise — 24 of 25](https://youtu.be/6dzzVGXVflI)
-
+* [Async React Hooks](https://youtu.be/HQq5Sod8AEk)
