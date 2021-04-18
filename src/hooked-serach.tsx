@@ -40,17 +40,17 @@ export default function HookedSearch() {
                     <h1 className="text-2xl uppercase">Giffy Search</h1>
                 </div>
 
-                <div className="container max-w-md mx-auto">
+                <div className="container max-w-md mx-auto flex flex-col">
                     <form
                         className="mt-4 flex flex-col"
                         onSubmit={e => { e.preventDefault(); setQuery(search); }}
                     >
                         <input className="px-4 py-2 border rounded-sm text-gray-800"
-                            value={search} onChange={e => setSearch(e.target.value)} placeholder="What GIF to search for" />
+                            value={search} onChange={e => setSearch(e.target.value)} placeholder="What GIF to search for" autoComplete="search-gif" />
                         <button className="self-center mt-4 px-4 py-1 border rounded-md text-gray-300">Search</button>
                     </form>
 
-                    <div className="mt-4">
+                    <div className="mt-4 max-h-96 overflow-y-auto">
                         {loading
                             ? 'Loading'
                             : <div className="grid" style={{gridTemplateColumns: 'repeat(4, minmax(100px, 1fr))'}}>
