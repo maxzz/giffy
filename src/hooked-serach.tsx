@@ -52,7 +52,7 @@ export default function HookedSearch() {
                 <div className="mt-4 max-h-96 overflow-y-auto">
                     {loading
                         ? 'Loading'
-                        : <div className="grid" style={{ gridTemplateColumns: 'repeat(4, minmax(100px, 1fr))' }}>
+                        : <div className="grid grid-cols-4" >
                             {results.map(item => {
                                 return <video autoPlay loop key={item} src={item} />;
                             })}
