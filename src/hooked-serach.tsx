@@ -48,7 +48,7 @@ export default function HookedSearch() {
                         value={search} onChange={e => setSearch(e.target.value)} placeholder="What GIF to search for" autoComplete="search-gif"
                     />
 
-                    <button 
+                    <button
                         className="self-center 
                             transform active:scale-105
                             mt-4 px-4 py-2 uppercase text-sm leading-normal
@@ -59,13 +59,28 @@ export default function HookedSearch() {
                 <div className="mt-4">
                     {loading
                         ? 'Loading'
-                        : <div className="" style={{columnCount: 4, columnGap: '.5rem'}}>
+                        : <div className="" style={{ columnCount: 4, columnGap: '.5rem' }}>
                             {results.map(item => {
                                 return <video className="mb-2" autoPlay loop key={item} src={item} />;
                             })}
                         </div>
                     }
                 </div>
+
+                <div className="fixed flex right-2 bottom-3">
+                    <a
+                        className="p-1 pt-2 pb-0 border rounded-full text-gray-100 border-gray-100"
+                        href="https://github.com/maxzz/giffy" target="_blank"
+                        title="Open GitHub source code"
+                    >
+                        <div className="w-5 h-5">
+                            <svg className="stroke-1" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
     );
