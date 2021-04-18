@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
+/* .container {
     display: grid;
     grid-gap: .4em;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -13,4 +13,4 @@
 .container video {
     max-width: 200px;
     max-height: 200px;
-}
+} */

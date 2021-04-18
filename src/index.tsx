@@ -6,9 +6,7 @@ import HookedSearch from './hooked-serach';
 function App() {
     return (
         <StrictMode>
-            <div>
-                <HookedSearch />
-            </div>
+            <HookedSearch />
         </StrictMode>
     );
 }

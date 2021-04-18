@@ -33,20 +33,23 @@ export default function HookedSearch() {
     const [results, loading] = useGiphy(query);
 
     return (
-        <div>
+        <div className="container max-w-md mx-auto p-4">
+            <div className="h-16 bg-gradient-to-r from-gray-400 to-gray-800"></div>
             <form
+                className="flex flex-col"
                 onSubmit={e => {
                     e.preventDefault();
                     setQuery(search);
                 }}
             >
-                <input value={search} onChange={e => setSearch(e.target.value)} placeholder="What GIF to search for" />
-                <button>Search</button>
+                <input className="px-4 py-2 border rounded-sm text-gray-800"
+                    value={search} onChange={e => setSearch(e.target.value)} placeholder="What GIF to search for" />
+                <button className="self-center mt-4 px-4 py-1 border rounded-md text-gray-800">Search</button>
             </form>
 
             {loading
                 ? 'Loading'
-                : 
+                :
                 <div className='container'>
                     {
                         results.map(item => {
