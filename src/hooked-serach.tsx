@@ -35,7 +35,7 @@ export default function HookedSearch() {
     const [results, loading] = useGiphy(query);
 
     return (
-        <div className="h-screen overflow-y-auto">
+        <div className="">
 
             <div className="h-16 px-4 flex items-center justify-end text-gray-100 bg-gradient-to-r from-gray-400 to-gray-800 shadow-md">
                 <h1 className="text-2xl uppercase">Giffy Search</h1>
@@ -58,10 +58,10 @@ export default function HookedSearch() {
                     >Search</button>
                 </form>
 
-                <div className="mt-4">
+                <div className="mt-4 max-h-96 overflow-y-auto smallscroll">
                     {loading
                         ? 'Loading'
-                        : <div className="" style={{ columnCount: 4, columnGap: '.5rem' }}>
+                        : <div className="overflow-y-auto" style={{ columnCount: 4, columnGap: '.5rem' }}>
                             {results.map(item => {
                                 return <video className="mb-2" autoPlay loop key={item} src={item} />;
                             })}
