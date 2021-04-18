@@ -37,7 +37,7 @@ export default function HookedSearch() {
             <div className="h-16 px-4 flex items-center justify-end text-gray-100 bg-gradient-to-r from-gray-400 to-gray-800 uppercase">
                 <h1 className="text-2xl">Giffy Search</h1>
             </div>
-            <div className="container max-w-md mx-auto">
+            <div className="container max-w-md mx-auto bg-gray-600">
                 <form
                     className="mt-4 flex flex-col"
                     onSubmit={e => {
@@ -53,7 +53,7 @@ export default function HookedSearch() {
                 <div className="mt-4">
                     {loading
                         ? 'Loading'
-                        : <div className="grid grid-flow-col auto-cols-[32px]">
+                        : <div className="grid" style={{gridTemplateColumns: 'repeat(4, minmax(100px, 1fr))'}}>
                                 {results.map(item => {
                                     return <video autoPlay loop key={item} src={item} />;
                                 })}
