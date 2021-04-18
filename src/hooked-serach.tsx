@@ -51,7 +51,8 @@ export default function HookedSearch() {
                     <button 
                         className="self-center 
                             transform active:scale-105
-                            mt-4 px-4 py-1 border rounded-md text-gray-300 focus:outline-none focus:ring-4 ring-offset-1 ring-gray-800 ring-offset-gray-600"
+                            mt-4 px-4 py-2 uppercase text-sm leading-normal
+                            border rounded-md text-gray-300 focus:outline-none focus:ring-4 ring-offset-1 ring-gray-800 ring-offset-gray-600"
                     >Search</button>
                 </form>
 
