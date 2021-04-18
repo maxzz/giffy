@@ -69,7 +69,7 @@ export default function HookedSearch() {
 
                 <div className="fixed flex right-2 bottom-3">
                     <a
-                        className="p-1 pt-2 pb-0 border rounded-full text-gray-100 border-gray-100"
+                        className="p-1 pt-2 pb-0 border rounded-full text-gray-500 border-gray-500"
                         href="https://github.com/maxzz/giffy" target="_blank"
                         title="Open GitHub source code"
                     >
