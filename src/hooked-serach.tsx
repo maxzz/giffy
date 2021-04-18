@@ -45,8 +45,14 @@ export default function HookedSearch() {
                     onSubmit={e => { e.preventDefault(); setQuery(search); }}
                 >
                     <input className="px-4 py-2 border rounded-sm text-gray-800"
-                        value={search} onChange={e => setSearch(e.target.value)} placeholder="What GIF to search for" autoComplete="search-gif" />
-                    <button className="self-center mt-4 px-4 py-1 border rounded-md text-gray-300 focus:outline-none focus:ring-4 ring-offset-1 ring-gray-800 ring-offset-gray-600">Search</button>
+                        value={search} onChange={e => setSearch(e.target.value)} placeholder="What GIF to search for" autoComplete="search-gif"
+                    />
+
+                    <button 
+                        className="self-center 
+                            transform active:scale-105
+                            mt-4 px-4 py-1 border rounded-md text-gray-300 focus:outline-none focus:ring-4 ring-offset-1 ring-gray-800 ring-offset-gray-600"
+                    >Search</button>
                 </form>
 
                 <div className="mt-4">
