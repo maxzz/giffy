@@ -21,6 +21,8 @@ function useGiphy(query: string): [any[], boolean] {
         }
         if (query !== '') {
             fetchData();
+        } else {
+            setResults([]);
         }
     }, [query]);
 
@@ -33,7 +35,7 @@ export default function HookedSearch() {
     const [results, loading] = useGiphy(query);
 
     return (
-        <div className="h-screen">
+        <div className="h-screen overflow-y-auto">
 
             <div className="h-16 px-4 flex items-center justify-end text-gray-100 bg-gradient-to-r from-gray-400 to-gray-800 shadow-md">
                 <h1 className="text-2xl uppercase">Giffy Search</h1>
