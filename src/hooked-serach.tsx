@@ -1,7 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
 const MY_GIPHY_KEY = import.meta.env.VITE_MY_GIPHY_KEY;
-
+/*
+Dev:
+{
+    "VITE_MY_GIPHY_KEY": "THE REAL KEY",
+    "BASE_URL": "/",
+    "MODE": "development",
+    "DEV": true,
+    "PROD": false,
+    "SSR": false
+}
+Prod:
+{
+    "VITE_MY_GIPHY_KEY": "THE REAL KEY",
+    "BASE_URL": "",
+    "MODE": "production",
+    "DEV": false,
+    "PROD": true
+}
+*/
 console.log('key:', import.meta.env.VITE_MY_GIPHY_KEY);
 console.log('keys:', import.meta.env);
 
