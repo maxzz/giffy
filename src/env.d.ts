@@ -1,3 +1,3 @@
 interface ImportMetaEnv {
-    MY_GIPHY_KEY: string;
+    VITE_MY_GIPHY_KEY: string;
 }
