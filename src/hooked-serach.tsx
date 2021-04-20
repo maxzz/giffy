@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-const MY_GIPHY_KEY = 'nasGAvbAc9jhi08DuzUhIV1sW3M9pYDT';
+const MY_GIPHY_KEY = import.meta.env.VITE_MY_GIPHY_KEY;
+
+console.log('key:', import.meta.env.VITE_MY_GIPHY_KEY);
+console.log('keys:', import.meta.env);
 
 function useGiphy(query: string): [any[], boolean] {
     const [results, setResults] = useState<any[]>([]);
